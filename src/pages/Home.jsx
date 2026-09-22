@@ -6,6 +6,7 @@ import Process from '../components/Process';
 import CTA from '../components/CTA';
 import ContactForm from '../components/ContactForm';
 import Footer from '../components/Footer';
+import SocialRail from '../components/SocialRail';
 import { useEffect } from 'react';
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
   return (
     <main>
       <Navbar />
+      <SocialRail />
       <Hero />
       <Intro />
       <Services />
