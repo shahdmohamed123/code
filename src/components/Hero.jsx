@@ -22,7 +22,6 @@ export default function Hero() {
         </div>
         <HeroVisual />
       </div>
-      <div className="hero-scroll"><span>Scroll to explore</span><i /></div>
     </section>
   );
 }
