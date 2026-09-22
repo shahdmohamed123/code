@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowDown, ArrowUpRight } from 'lucide-react';
+import { ArrowDown, ArrowUpRight, CheckCircle2 } from 'lucide-react';
 import HeroVisual from './HeroVisual';
 
 export default function Hero() {
@@ -7,24 +7,22 @@ export default function Hero() {
     <section className="hero" id="home">
       <div className="hero-grid shell">
         <div className="hero-copy">
-          <motion.div className="eyebrow" initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }}><span /> Digital products studio</motion.div>
+          <motion.div className="eyebrow" initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }}><span /> Cairo · Building worldwide</motion.div>
           <motion.h1 initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .1, duration: .7 }}>
-            We build digital products <em>that move businesses forward.</em>
+            Digital products <em>built to move.</em>
           </motion.h1>
           <motion.p className="hero-lead" initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .2, duration: .65 }}>
-            From websites and mobile apps to custom software and digital experiences, we turn ideas into products built around real business goals.
+            Strategy, design, and engineering in one senior product team. We turn ambitious ideas and complex workflows into clear, scalable digital experiences.
           </motion.p>
           <motion.div className="hero-actions" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .35 }}>
             <a className="button" href="#contact">Start a project <ArrowUpRight size={19} /></a>
             <a className="button button--ghost" href="#services">Explore services <ArrowDown size={17} /></a>
           </motion.div>
-          <motion.p className="service-line" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .5 }}>
-            Web Development <i /> Mobile Apps <i /> UI/UX <i /> Custom Software <i /> Digital Marketing
-          </motion.p>
+          <motion.div className="hero-proof" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .5 }}><span><CheckCircle2 size={15} /> Senior product team</span><span><CheckCircle2 size={15} /> Weekly progress</span><span><CheckCircle2 size={15} /> Built to scale</span></motion.div>
         </div>
         <HeroVisual />
       </div>
-      <div className="hero-index"><span>01</span><i /><span>13</span></div>
+      <div className="hero-scroll"><span>Scroll to explore</span><i /></div>
     </section>
   );
 }

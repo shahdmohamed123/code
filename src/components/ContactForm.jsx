@@ -25,7 +25,7 @@ export default function ContactForm() {
   return (
     <section className="contact section" id="contact">
       <div className="shell contact-grid">
-        <div className="contact-copy"><span className="section-number">Start a conversation</span><h2>Let's build<br />something.</h2><p>Tell us what you're working on. We'll turn the moving parts into a clear product path.</p><div><span>01</span><p><b>Share the idea</b>Give us the context, goals, and challenges.</p></div><div><span>02</span><p><b>Get a clear next step</b>We'll review it and shape the right direction.</p></div></div>
+        <div className="contact-copy"><span className="section-number">Start a conversation</span><h2>Let&apos;s build<br />something.</h2><p>Tell us what you&apos;re working on. We&apos;ll turn the moving parts into a clear product path.</p><div><span>01</span><p><b>Share the idea</b>Give us the context, goals, and challenges.</p></div><div><span>02</span><p><b>Get a clear next step</b>We&apos;ll review it and shape the right direction.</p></div></div>
         <form className="contact-form" onSubmit={submit} noValidate>
           <div className="form-grid">
             <label>Full name<input name="name" value={form.name} onChange={update} placeholder="Your name" aria-invalid={!!errors.name} />{errors.name && <small>{errors.name}</small>}</label>
@@ -39,7 +39,7 @@ export default function ContactForm() {
             <label className="form-wide">Project description<textarea name="description" value={form.description} onChange={update} placeholder="What are you hoping to build, improve, or solve?" rows="5" aria-invalid={!!errors.description} />{errors.description && <small>{errors.description}</small>}</label>
           </div>
           <button className="button submit-button" disabled={status === 'loading'}>{status === 'loading' ? <><LoaderCircle className="spinner" size={18} /> Sending inquiry...</> : <>Send project inquiry <ArrowRight size={18} /></>}</button>
-          <AnimatePresence>{status === 'success' && <motion.p className="form-success" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} role="status"><CheckCircle2 size={18} /> Thanks! Your project inquiry has been received.</motion.p>}</AnimatePresence>
+          <AnimatePresence>{status === 'success' && <motion.output className="form-success" initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }}><CheckCircle2 size={18} /> Thanks! Your project inquiry has been received.</motion.output>}</AnimatePresence>
         </form>
       </div>
     </section>

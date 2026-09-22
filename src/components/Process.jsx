@@ -6,7 +6,7 @@ export default function Process() {
   return (
     <section className="process section" id="process">
       <div className="shell">
-        <SectionHeader label="How we work" title="From idea to launch." light subtitle="A clear, collaborative path from first conversation to a product ready to grow." />
+        <SectionHeader label="Our process" title="Clear from day one." light subtitle="No black boxes and no long silences—just a focused path from ambition to measurable progress." />
         <div className="timeline">
           <motion.div className="timeline-line" initial={{ scaleX: 0 }} whileInView={{ scaleX: 1 }} viewport={{ once: true, amount: .5 }} transition={{ duration: 1.1 }} />
           {processSteps.map(([number, title, text, Icon], index) => (

@@ -1,5 +1,5 @@
 import { motion, useReducedMotion } from 'framer-motion';
-import { BarChart3, Check, Code2, Layers3, MousePointer2, Sparkles } from 'lucide-react';
+import { BarChart3, Check, Code2, Layers3, MousePointer2, TrendingUp } from 'lucide-react';
 
 export default function HeroVisual() {
   const reduce = useReducedMotion();
@@ -12,29 +12,29 @@ export default function HeroVisual() {
     <motion.div className="hero-visual" initial={{ opacity: 0, scale: .96 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: .8, delay: .2 }}>
       <div className="visual-glow" />
       <motion.div className="browser-card" {...float(0)}>
-        <div className="browser-top"><i /><i /><i /><span>codevias / product</span></div>
+        <div className="browser-top"><i /><i /><i /><span>codevias / command center</span></div>
         <div className="browser-content">
           <div className="browser-copy">
-            <span className="mini-kicker">DIGITAL PRODUCT</span>
-            <strong>Make the complex<br />feel simple.</strong>
-            <span className="mini-button">Explore product</span>
+            <span className="mini-kicker">OPERATIONS, CONNECTED</span>
+            <strong>One system.<br />Total clarity.</strong>
+            <span className="mini-button">Open workspace</span>
           </div>
-          <div className="browser-art"><Sparkles /><span /><span /></div>
+          <div className="browser-art"><TrendingUp /><span /><span /></div>
         </div>
       </motion.div>
 
       <motion.div className="phone-card" {...float(.8, 14)}>
         <div className="phone-notch" />
         <span className="avatar-dot" />
-        <small>Welcome back</small>
-        <strong>Design smarter.</strong>
+        <small>Product health</small>
+        <strong>Growing fast.</strong>
         <div className="phone-stat"><span>Growth</span><b>+28%</b></div>
         <div className="phone-bars"><i /><i /><i /><i /><i /></div>
       </motion.div>
 
       <motion.div className="crm-card" {...float(.25, 8)}>
-        <div><BarChart3 size={17} /><span>Pipeline</span><b>Live</b></div>
-        <strong>$84.2K</strong>
+        <div><BarChart3 size={17} /><span>Growth</span><b>+24%</b></div>
+        <strong>$184K</strong>
         <div className="crm-lines"><i /><i /><i /></div>
       </motion.div>
 
