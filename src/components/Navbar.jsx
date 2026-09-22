@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import Logo from './Logo';
 
 const links = [
-  ['Services', 'services'], ['Process', 'process'], ['About', 'about'],
+  ['Services', 'services'], ['Process', 'process'], ['Blog', 'blog'], ['About', 'about'],
 ];
 
 export default function Navbar() {

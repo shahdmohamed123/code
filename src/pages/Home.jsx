@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import Intro from '../components/Intro';
 import Services from '../components/Services';
 import Process from '../components/Process';
+import Blog from '../components/Blog';
 import CTA from '../components/CTA';
 import ContactForm from '../components/ContactForm';
 import Footer from '../components/Footer';
@@ -22,6 +23,7 @@ export default function Home() {
       <Intro />
       <Services />
       <Process />
+      <Blog />
       <CTA />
       <ContactForm />
       <Footer />
