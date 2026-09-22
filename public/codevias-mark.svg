@@ -1,6 +1,27 @@
-<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M58.7 10.2 39.1 16l-6.4 10.7-5.2-8.2H13.9L5.5 32l8.4 13.5h13.8l5.1-8.2 6.3 10.6 19.6-37.7Z" fill="#6E57FF"/>
-  <path d="M58.7 10.2 39.1 16l-5.9 9.9 13.4-4.2-13.8 15.6 6.3 10.6 19.6-37.7Z" fill="#8F7DFF"/>
-  <path d="M13.9 18.5 5.5 32l8.4 13.5h13.8l5.1-8.2-7.1-5.5H17.2L13.7 26l5.2-7.5h-5Z" fill="#B9AEFF"/>
-  <path d="m27.5 18.5 5.2 8.2 6.4-10.7-11.6 2.5Z" fill="#5C43D8"/>
+<svg width="80" height="64" viewBox="0 0 80 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="c-base" x1="7" y1="52" x2="50" y2="8" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#121722"/>
+      <stop offset="0.54" stop-color="#202638"/>
+      <stop offset="1" stop-color="#5637E7"/>
+    </linearGradient>
+    <linearGradient id="v-base" x1="43" y1="53" x2="70" y2="4" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2B235C"/>
+      <stop offset="0.48" stop-color="#4B35B8"/>
+      <stop offset="1" stop-color="#6847F4"/>
+    </linearGradient>
+    <linearGradient id="v-light" x1="50" y1="32" x2="71" y2="4" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5140A8"/>
+      <stop offset="1" stop-color="#765BFF"/>
+    </linearGradient>
+  </defs>
+  <path d="M21 7H52L43 21H29L21 32L30 46H45L53 58H20L5 32L21 7Z" fill="url(#c-base)"/>
+  <path d="M21 7H35L29 21L21 32L5 32L21 7Z" fill="#2A3041"/>
+  <path d="M5 32H21L30 46L20 58L5 32Z" fill="#171D29"/>
+  <path d="M20 58L30 46H45L53 58H20Z" fill="#111720"/>
+  <path d="M35 7H52L43 21H29L35 7Z" fill="#4E35D1"/>
+  <path d="M48 19L56 33L64 16L48 19ZM39 34L48 20L55 32L72 3L55 58L39 34Z" fill="url(#v-base)"/>
+  <path d="M48 19L72 3L64 16L48 28L39 34L48 19Z" fill="#5D43DD"/>
+  <path d="M55 58L55 32L72 3L55 58Z" fill="url(#v-light)"/>
+  <path d="M39 34L48 28L55 32V58L39 34Z" fill="#302564"/>
 </svg>
