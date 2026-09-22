@@ -25,7 +25,7 @@ export default function ContactForm() {
   return (
     <section className="contact section" id="contact">
       <div className="shell contact-grid">
-        <div className="contact-copy"><span className="section-number">Start a conversation</span><h2>Let&apos;s build<br />something.</h2><p>Tell us what you&apos;re working on. We&apos;ll turn the moving parts into a clear product path.</p><div><span>01</span><p><b>Share the idea</b>Give us the context, goals, and challenges.</p></div><div><span>02</span><p><b>Get a clear next step</b>We&apos;ll review it and shape the right direction.</p></div></div>
+        <div className="contact-copy"><span className="section-number">Start a conversation</span><h2>Let&apos;s build<br />something.</h2><p>Tell us what you&apos;re working on. We&apos;ll turn the moving parts into a clear product path.</p><a className="contact-email" href="mailto:codeviassolutions@gmail.com">codeviassolutions@gmail.com</a><div><span>01</span><p><b>Share the idea</b>Give us the context, goals, and challenges.</p></div><div><span>02</span><p><b>Get a clear next step</b>We&apos;ll review it and shape the right direction.</p></div></div>
         <form className="contact-form" onSubmit={submit} noValidate>
           <div className="form-grid">
             <label>Full name<input name="name" value={form.name} onChange={update} placeholder="Your name" aria-invalid={!!errors.name} />{errors.name && <small>{errors.name}</small>}</label>
