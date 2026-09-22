@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /admin
 
-Sitemap: https://codevias-digital-products.wiry-civet-2635.chatgpt.site/sitemap.xml
+Sitemap: https://codevias-digital-products.info486971.chatgpt.site/sitemap.xml
