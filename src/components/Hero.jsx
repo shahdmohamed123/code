@@ -7,7 +7,7 @@ export default function Hero() {
     <section className="hero" id="home">
       <div className="hero-grid shell">
         <div className="hero-copy">
-          <motion.div className="eyebrow" initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }}><span /> Cairo · Building worldwide</motion.div>
+          <motion.div className="eyebrow" initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }}><span /> Building worldwide</motion.div>
           <motion.h1 initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: .1, duration: .7 }}>
             Digital products <em>built to move.</em>
           </motion.h1>
